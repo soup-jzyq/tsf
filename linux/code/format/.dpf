@@ -1,0 +1,49 @@
+obj/formatdb.o: formatdb.cpp formatdb.h ../portable/typedefine.h \
+  ../portable/cstring.h formattree.h ../utility/tree.h \
+  ../utility/formula.h ../utility/list.h
+obj/formattree.o: formattree.cpp formattree.h ../portable/typedefine.h \
+  ../utility/tree.h ../utility/formula.h ../portable/cstring.h
+obj/formatparser.o: formatparser.cpp formatparser.h formatdb.h \
+  ../portable/typedefine.h ../portable/cstring.h formattree.h \
+  ../utility/tree.h ../utility/formula.h ../utility/list.h \
+  ../content/contenttree.h ../portable/file.h ../dvb/packet.h \
+  ../dvb/dvbspace.h ../dvb/section.h
+obj/formatserver.o: formatserver.cpp formatserver.h ../portable/typedefine.h \
+  tableformat.h sectionformat.h mpeg2descriptorformat.h formatparser.h \
+  formatdb.h ../portable/cstring.h formattree.h ../utility/tree.h \
+  ../utility/formula.h ../utility/list.h ../content/contenttree.h \
+  ../portable/file.h ../dvb/packet.h ../dvb/dvbspace.h ../dvb/section.h \
+  dvbdescriptorformat.h ../dvb/table.h packetformat.h
+obj/formatfile.o: formatfile.cpp formatfile.h ../portable/typedefine.h \
+  ../utility/xmlfile.h ../portable/file.h ../portable/cstring.h \
+  formatdb.h formattree.h ../utility/tree.h ../utility/formula.h \
+  ../utility/list.h ../dvb/dvbspace.h
+obj/tableformat.o: tableformat.cpp tableformat.h sectionformat.h \
+  mpeg2descriptorformat.h formatparser.h formatdb.h \
+  ../portable/typedefine.h ../portable/cstring.h formattree.h \
+  ../utility/tree.h ../utility/formula.h ../utility/list.h \
+  ../content/contenttree.h ../portable/file.h ../dvb/packet.h \
+  ../dvb/dvbspace.h ../dvb/section.h dvbdescriptorformat.h \
+  ../dvb/table.h
+obj/sectionformat.o: sectionformat.cpp sectionformat.h \
+  mpeg2descriptorformat.h formatparser.h formatdb.h \
+  ../portable/typedefine.h ../portable/cstring.h formattree.h \
+  ../utility/tree.h ../utility/formula.h ../utility/list.h \
+  ../content/contenttree.h ../portable/file.h ../dvb/packet.h \
+  ../dvb/dvbspace.h ../dvb/section.h dvbdescriptorformat.h
+obj/dvbdescriptorformat.o: dvbdescriptorformat.cpp dvbdescriptorformat.h \
+  formatparser.h formatdb.h ../portable/typedefine.h \
+  ../portable/cstring.h formattree.h ../utility/tree.h \
+  ../utility/formula.h ../utility/list.h ../content/contenttree.h \
+  ../portable/file.h ../dvb/packet.h ../dvb/dvbspace.h ../dvb/section.h
+obj/mpeg2descriptorformat.o: mpeg2descriptorformat.cpp \
+  mpeg2descriptorformat.h formatparser.h formatdb.h \
+  ../portable/typedefine.h ../portable/cstring.h formattree.h \
+  ../utility/tree.h ../utility/formula.h ../utility/list.h \
+  ../content/contenttree.h ../portable/file.h ../dvb/packet.h \
+  ../dvb/dvbspace.h ../dvb/section.h
+obj/packetformat.o: packetformat.cpp packetformat.h formatparser.h formatdb.h \
+  ../portable/typedefine.h ../portable/cstring.h formattree.h \
+  ../utility/tree.h ../utility/formula.h ../utility/list.h \
+  ../content/contenttree.h ../portable/file.h ../dvb/packet.h \
+  ../dvb/dvbspace.h ../dvb/section.h

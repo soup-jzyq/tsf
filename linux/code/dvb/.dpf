@@ -1,0 +1,22 @@
+obj/tsfile.o: tsfile.cpp ../format/formatserver.h ../portable/typedefine.h \
+  ../format/tableformat.h ../format/sectionformat.h \
+  ../format/mpeg2descriptorformat.h ../format/formatparser.h \
+  ../format/formatdb.h ../portable/cstring.h ../format/formattree.h \
+  ../utility/tree.h ../utility/formula.h ../utility/list.h \
+  ../content/contenttree.h ../portable/file.h ../dvb/packet.h \
+  ../dvb/dvbspace.h ../dvb/section.h ../format/dvbdescriptorformat.h \
+  ../dvb/table.h ../format/packetformat.h ../dvb/tsfile.h \
+  ../utility/crc.h
+obj/packet.o: packet.cpp ../dvb/packet.h ../dvb/dvbspace.h \
+  ../portable/typedefine.h ../portable/file.h ../portable/cstring.h
+obj/section.o: section.cpp ../dvb/section.h ../portable/typedefine.h \
+  ../dvb/dvbspace.h ../utility/crc.h
+obj/table.o: table.cpp ../dvb/table.h ../portable/typedefine.h \
+  ../dvb/dvbspace.h ../dvb/section.h ../portable/file.h \
+  ../portable/cstring.h ../content/contentfile.h ../utility/xmlfile.h \
+  ../content/contenttree.h ../utility/tree.h ../utility/formula.h \
+  ../dvb/packet.h ../format/formatparser.h ../format/formatdb.h \
+  ../format/formattree.h ../utility/list.h ../format/formatserver.h \
+  ../format/tableformat.h ../format/sectionformat.h \
+  ../format/mpeg2descriptorformat.h ../format/dvbdescriptorformat.h \
+  ../format/packetformat.h

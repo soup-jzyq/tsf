@@ -1,0 +1,9 @@
+obj/contenttree.o: contenttree.cpp contenttree.h ../portable/typedefine.h \
+  ../portable/cstring.h ../portable/file.h ../utility/tree.h \
+  ../utility/formula.h ../dvb/packet.h ../dvb/dvbspace.h \
+  ../dvb/section.h
+obj/contentfile.o: contentfile.cpp contentfile.h ../portable/typedefine.h \
+  ../utility/xmlfile.h ../portable/file.h ../portable/cstring.h \
+  contenttree.h ../utility/tree.h ../utility/formula.h ../dvb/packet.h \
+  ../dvb/dvbspace.h ../dvb/section.h ../format/formatparser.h \
+  ../format/formatdb.h ../format/formattree.h ../utility/list.h

@@ -1,0 +1,9 @@
+obj/crc.o: crc.cpp crc.h ../portable/typedefine.h
+obj/tree.o: tree.cpp tree.h ../portable/typedefine.h
+obj/list.o: list.cpp list.h ../portable/typedefine.h
+obj/formula.o: formula.cpp formula.h ../portable/typedefine.h \
+  ../portable/cstring.h tree.h
+obj/object.o: object.cpp object.h ../portable/typedefine.h
+obj/xmlfile.o: xmlfile.cpp xmlfile.h ../portable/typedefine.h \
+  ../portable/file.h ../portable/cstring.h ../expat/expat.h \
+  ../expat/expat_external.h

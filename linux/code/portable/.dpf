@@ -1,0 +1,2 @@
+obj/file.o: file.cpp file.h typedefine.h cstring.h
+obj/cstring.o: cstring.cpp cstring.h typedefine.h

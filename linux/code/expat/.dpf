@@ -1,0 +1,9 @@
+obj/xmlparse.o: xmlparse.c expat_config.h ascii.h expat.h expat_external.h \
+  internal.h xmltok.h xmlrole.h
+obj/xmlrole.o: xmlrole.c expat_config.h expat_external.h internal.h xmlrole.h \
+  xmltok.h ascii.h
+obj/xmltok.o: xmltok.c expat_config.h expat_external.h internal.h xmltok.h \
+  nametab.h xmltok_impl.h ascii.h xmltok_impl.c asciitab.h utf8tab.h \
+  iasciitab.h latin1tab.h xmltok_ns.c
+obj/xmltok_impl.o: xmltok_impl.c
+obj/xmltok_ns.o: xmltok_ns.c
